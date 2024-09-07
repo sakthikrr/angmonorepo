@@ -1,0 +1,23 @@
+<div style="margin: 0 auto;">
+    <h3>{{formtitle}}</h3>
+<form [formGroup]="conform" (ngSubmit)="onsubmit()">
+    <div class="field">
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" pInputText  formControlName="firstName">
+    </div>
+    <div class="field">
+    <label for="last-name">Last Name: </label>
+    <input id="last-name" type="text" pInputText  formControlName="lastName">
+</div>
+<div class="field">
+    <textarea 
+    rows="5" 
+    cols="30" 
+    pInputTextarea 
+    formControlName="msg">
+
+</textarea>
+</div>
+<p-button type="Submit" label="Submit" />
+  </form>
+</div>
